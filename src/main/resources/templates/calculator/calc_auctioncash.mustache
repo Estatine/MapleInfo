@@ -1,0 +1,49 @@
+{{>layouts/header}}
+    <section class="bg-primary-subtle" style="height: auto;min-height: 1000px;border-bottom-width: 1px;border-bottom-color: #ffffff;background: var(--bs-danger-bg-subtle);">
+        <div class="table-responsive" style="margin: auto;width: 450px;max-width: 450px;margin-top: 5%;min-width: 450px;">
+            <form action="/mm-calc" method="get">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th style="text-align: center;background: #738aff;width: 60%;font-weight: bold;color: var(--bs-white);min-width: 60%;max-width: 60%;font-size: 20px;" colspan="2">경매장 메소/메포 가격 효율 계산기</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td style="text-align: center;max-width: 200px;background: #738aff;font-weight: bold;color: var(--bs-white);width: 200px;min-width: 200px;">해당 아이템의 경매장 가격</td>
+                        <td style="background: #75adff;width: 200px;min-width: 200px;max-width: 200px;color: var(--bs-white);"><input name="auctionPrice" class="border rounded-0 border-1 border-white" type="number" style="max-height: 23px;background: #75adff;color: rgb(255,255,255);font-weight: bold;width: 140px;max-width: 140px;min-width: 140px;" min="0" max="99999999999" value="0" step="1"><img src="img/meso.png" width="20" height="20" style="width: 20px;height: 20px;max-width: 20px;max-height: 20px;margin-bottom: 0px;margin-top: -4px;margin-left: 4px;">&nbsp;메소</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;max-width: 200px;background: #738aff;font-weight: bold;color: var(--bs-white);">해당 아이템의 캐시샵 가격</td>
+                        <td style="background: #75adff;font-size: 16px;color: var(--bs-white);"><input name="cashItemPrice" class="border rounded-0 border-1 border-white" type="number" style="max-height: 23px;background: #75adff;color: rgb(255,255,255);font-weight: bold;width: 140px;max-width: 140px;min-width: 140px;" min="0" max="999999" value="0" step="1"><img src="img/meso2.png" width="20" height="20" style="width: 20px;height: 20px;max-width: 20px;max-height: 20px;margin-bottom: 0px;margin-top: -4px;margin-left: 4px;">&nbsp;메포</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;max-width: 200px;background: #738aff;font-weight: bold;color: var(--bs-white);">메소 판매시 억당 메포</td>
+                        <td style="background: #75adff;color: var(--bs-white);line-height: 22px;font-size: 16px;"><input name="maplePoint" class="border rounded-0 border-1 border-white" type="number" style="max-height: 23px;background: #75adff;color: rgb(255,255,255);font-weight: bold;width: 140px;max-width: 140px;min-width: 140px;" min="0" max="9999" value="2800" step="1"><img src="img/meso2.png" width="20" height="20" style="width: 20px;height: 20px;max-width: 20px;max-height: 20px;margin-bottom: 0px;margin-top: -4px;margin-left: 4px;">&nbsp;메포</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;max-width: 200px;background: #738aff;font-weight: bold;color: var(--bs-white);" colspan="2"><button class="btn btn-success" type="submit">계산하기</button></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+        <div class="table-responsive" style="margin: auto;width: 450px;max-width: 450px;margin-top: 5%;min-width: 450px;">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th style="text-align: center;background: #738aff;width: 60%;font-weight: bold;color: var(--bs-white);min-width: 60%;max-width: 60%;font-size: 20px;" colspan="2">메소/메포 효율 계산 결과</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="text-align: center;max-width: 200px;background: #738aff;font-weight: bold;color: var(--bs-white);width: 200px;min-width: 200px;" colspan="2">해당 캐시아이템의 메소 정가는 약 {{realPrice}}&nbsp;<img src="img/meso.png" width="20" height="20" style="width: 20px;height: 20px;max-width: 20px;max-height: 20px;margin-bottom: 0px;margin-top: -4px;margin-left: 4px;">&nbsp;이며</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;max-width: 200px;background: #738aff;font-weight: bold;color: var(--bs-white);width: 200px;min-width: 200px;" colspan="2">{{mesoMepo}}로 구매하는 것이 <p>약 {{minPrice}} <img src="img/meso.png" width="20" height="20" style="width: 20px;height: 20px;max-width: 20px;max-height: 20px;margin-bottom: 0px;margin-top: -4px;margin-left: 4px;">&nbsp;더 저렴합니다.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+{{>layouts/footer}}
