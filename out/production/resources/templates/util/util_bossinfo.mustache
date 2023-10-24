@@ -1,0 +1,273 @@
+{{>layouts/header}}
+<section class="bg-primary-subtle" style="height: auto;min-height: 1000px;border-bottom-width: 1px;border-bottom-color: #ffffff;background: var(--bs-danger-bg-subtle);">
+    <div class="table-responsive" style="margin: auto;width: 450px;max-width: 450px;margin-top: 5%;min-width: 450px;">
+        <table class="table">
+            <thead>
+            <tr>
+                <th style="text-align: center;background: #738aff;width: 60%;font-weight: bold;color: var(--bs-white);min-width: 60%;max-width: 60%;font-size: 20px;" colspan="2">보스 몬스터 정보</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td style="text-align: center;max-width: 100px;background: #738aff;font-weight: bold;color: var(--bs-white);width: 100px;min-width: 100px;">보스 몬스터 명</td>
+                <td style="background: #75adff;width: 200px;min-width: 200px;max-width: 200px;color: var(--bs-white);"><select style="background: #75adff;color: var(--bs-white);border-style: solid;border-color: var(--bs-white);width: 210px;min-width: 210px;max-width: 210px;">
+                    <option value="선택안함" selected="">보스 몬스터 선택 (필수)</option>
+                    <option value="자쿰">자쿰</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;max-width: 200px;background: #738aff;font-weight: bold;color: var(--bs-white);" colspan="2"><button class="btn btn-success" type="button">검색하기</button></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="container" style="text-align: center;">
+        <div class="card" style="border-style: none;width: 700px;margin: auto;min-width: 700px;max-width: 700px;">
+            <div class="card-header bg-primary-subtle">
+                <ul class="nav nav-tabs card-header-tabs bg-secondary-subtle" role="tablist" style="width: 680px;min-width: 680px;max-width: 680px;background: rgb(226, 227, 229);">
+                    <li class="nav-item"><a class="nav-link active link-dark" id="item-1-1-tab" role="tab" aria-controls="item-1-1" aria-selected="true" href="#item-1-1" data-bs-toggle="tab">이지</a></li>
+                    <li class="nav-item"><a class="nav-link link-dark" id="item-1-2-tab" role="tab" aria-controls="item-1-2" aria-selected="false" href="#item-1-2" data-bs-toggle="tab">노말</a></li>
+                    <li class="nav-item"><a class="nav-link link-dark" id="item-1-3-tab" role="tab" aria-controls="item-1-3" aria-selected="false" href="#item-1-3" data-bs-toggle="tab">하드</a></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                </ul>
+            </div>
+            <div class="card-body" style="background: rgb(226, 227, 229);padding-bottom: 0px;width: 700px;min-width: 700px;max-width: 700px;">
+                <div id="nav-tabContent" class="tab-content">
+                    <div id="item-1-1" class="tab-pane fade show active" role="tabpanel" aria-labelledby="item-1-1-tab">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th style="background: #651f1f;font-size: 14px;line-height: 12px;width: 200px;max-width: 200px;min-width: 200px;text-align: center;padding: 8px;padding-bottom: 8px;padding-top: 8px;height: 29px;max-height: 29px;color: var(--bs-white);min-height: 29px;border-width: 1px;border-color: var(--bs-white);border-right-width: 1px;border-right-color: rgb(255,255,255);border-bottom-width: 1px;border-bottom-color: #ffffff;" colspan="3" rowspan="6">이지 자쿰</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="flex-fill" style="font-size: 16px;line-height: 12px;text-align: center;background: #651f1f;border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;font-weight: bold;width: 260px;min-width: 260px;max-width: 260px;padding: 0px;" rowspan="9"><img src="img/자쿰일러스트.png" style="width: 186px;height: 220px;margin: 0px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;border-width: 1px;border-color: var(--bs-white);min-width: 260px;max-width: 260px;" width="35" height="35"><audio data-bs-toggle="tooltip" data-bss-tooltip="" controls="" style="width: 260px;height: 30px;" title="WelcomeToTheHell"></audio></td>
+                                    <td class="flex-fill" style="font-size: 16px;line-height: 12px;text-align: center;color: var(--bs-white);margin-top: 0px;padding-top: 10px;width: 140px;min-width: 140px;max-width: 140px;border-color: var(--bs-white);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;background: #651f1f;">레벨</td>
+                                    <td class="text-start flex-fill" style="font-size: 16px;line-height: 12px;text-align: center;border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;background: var(--bs-tertiary-color);color: var(--bs-white);margin-top: 0px;padding-top: 10px;">50</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;color: var(--bs-white);margin-top: 0px;padding-top: 10px;border-color: var(--bs-white);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;background: #651f1f;">총합 체력</td>
+                                    <td class="text-start" style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;color: var(--bs-white);margin-top: 0px;padding-top: 10px;">2,200,000 (220만)</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;color: var(--bs-white);margin-top: 0px;padding-top: 10px;border-color: var(--bs-white);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;background: #651f1f;">속성 반감 여부</td>
+                                    <td class="text-start" style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;color: var(--bs-white);margin-top: 0px;padding-top: 10px;">모든 속성 반감</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;color: var(--bs-white);margin-top: 0px;padding-top: 10px;border-color: var(--bs-white);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;background: #651f1f;">방어율</td>
+                                    <td class="text-start" style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;color: var(--bs-white);margin-top: 0px;padding-top: 10px;">30%</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;color: var(--bs-white);margin-top: 0px;padding-top: 10px;border-color: var(--bs-white);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;background: #651f1f;">요구 포스</td>
+                                    <td class="text-start" style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;color: var(--bs-white);margin-top: 0px;padding-top: 10px;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;color: var(--bs-white);margin-top: 0px;padding-top: 10px;border-color: var(--bs-white);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;background: #651f1f;">최대 포스</td>
+                                    <td class="text-start" style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;color: var(--bs-white);margin-top: 0px;padding-top: 10px;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;color: var(--bs-white);margin-top: 0px;padding-top: 10px;border-color: var(--bs-white);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;background: #651f1f;">데스카운트</td>
+                                    <td class="text-start" style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;color: var(--bs-white);margin-top: 0px;padding-top: 10px;">50</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;color: var(--bs-white);margin-top: 0px;padding-top: 10px;border-color: var(--bs-white);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;background: #651f1f;">초기화 날짜</td>
+                                    <td class="text-start" style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;color: var(--bs-white);margin-top: 0px;padding-top: 10px;">매일 00:00</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;color: var(--bs-white);margin-top: 0px;padding-top: 10px;border-color: var(--bs-white);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;background: #651f1f;">결정석 가격</td>
+                                    <td class="text-start" style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;color: var(--bs-white);margin-top: 0px;padding-top: 10px;">119,835 메소</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 14px;line-height: 12px;text-align: center;background: #651f1f;border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;font-weight: bold;color: var(--bs-white);" colspan="3">주요 보상</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;font-weight: bold;height: 30px;padding: 0px;min-height: 30px;max-height: 30px;color: var(--bs-white);padding-top: 3px;padding-bottom: 0px;" colspan="3"><img src="img/자쿰의%20투구.png" style="width: 30px;height: 30px;margin: 0px;margin-top: 0px;margin-right: 0px;min-width: 30px;max-width: 30px;min-height: 30px;max-height: 30px;">&nbsp;자쿰의 투구</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;font-weight: bold;height: 30px;padding: 0px;min-height: 30px;max-height: 30px;color: var(--bs-white);padding-top: 3px;padding-bottom: 0px;" colspan="3"><img src="img/자쿰의%20나뭇가지.png" style="width: 30px;height: 30px;margin: 0px;margin-top: 0px;margin-right: 0px;min-width: 30px;max-width: 30px;min-height: 30px;max-height: 30px;">&nbsp;자쿰의 나뭇가지</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;font-weight: bold;height: 30px;padding: 0px;min-height: 30px;max-height: 30px;color: var(--bs-white);padding-top: 3px;padding-bottom: 0px;" colspan="3"><img src="img/응축된%20힘의%20결정석.png" style="width: 30px;height: 30px;margin: 0px;margin-top: 0px;margin-right: 0px;min-width: 30px;max-width: 30px;min-height: 30px;max-height: 30px;">&nbsp;응축된 힘의 결정석</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;font-weight: bold;height: 30px;padding: 0px;min-height: 30px;max-height: 30px;color: var(--bs-white);padding-top: 3px;padding-bottom: 0px;" colspan="3"><img src="img/아쿠아틱%20레터%20눈장식.png" style="width: 30px;height: 30px;margin: 0px;margin-top: 0px;margin-right: 0px;min-width: 30px;max-width: 30px;min-height: 30px;max-height: 30px;">&nbsp;아쿠아틱 레터 눈장식</td>
+                                </tr>
+                                <tr></tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;font-weight: bold;height: 30px;padding: 0px;min-height: 30px;max-height: 30px;color: var(--bs-white);padding-top: 3px;padding-bottom: 0px;" colspan="3"><img src="img/주문의%20흔적.png" style="width: 30px;height: 30px;margin: 0px;margin-top: 0px;margin-right: 0px;min-width: 30px;max-width: 30px;min-height: 30px;max-height: 30px;">&nbsp;주문의 흔적</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;font-weight: bold;height: 30px;padding: 0px;min-height: 30px;max-height: 30px;color: var(--bs-white);padding-top: 3px;padding-bottom: 0px;" colspan="3"><img src="img/수상한%20큐브.png" style="width: 30px;height: 30px;margin: 0px;margin-top: 0px;margin-right: 0px;min-width: 30px;max-width: 30px;min-height: 30px;max-height: 30px;">&nbsp;수상한 큐브</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="item-1-2" class="tab-pane fade" role="tabpanel" aria-labelledby="item-1-2-tab">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th style="background: #651f1f;font-size: 14px;line-height: 12px;width: 200px;max-width: 200px;min-width: 200px;text-align: center;padding: 8px;padding-bottom: 8px;padding-top: 8px;height: 29px;max-height: 29px;color: var(--bs-white);min-height: 29px;border-width: 1px;border-color: var(--bs-white);border-right-width: 1px;border-right-color: rgb(255,255,255);border-bottom-width: 1px;border-bottom-color: #ffffff;" colspan="3" rowspan="6">노말 자쿰</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="flex-fill" style="font-size: 16px;line-height: 12px;text-align: center;background: #651f1f;border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;font-weight: bold;width: 260px;min-width: 260px;max-width: 260px;padding: 0px;" rowspan="9"><img src="img/자쿰일러스트.png" style="width: 186px;height: 220px;margin: 0px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;border-width: 1px;border-color: var(--bs-white);min-width: 260px;max-width: 260px;" width="35" height="35"><audio data-bs-toggle="tooltip" data-bss-tooltip="" controls="" style="width: 260px;height: 30px;" title="WelcomeToTheHell"></audio></td>
+                                    <td class="flex-fill" style="font-size: 16px;line-height: 12px;text-align: center;color: var(--bs-white);margin-top: 0px;padding-top: 10px;width: 140px;min-width: 140px;max-width: 140px;border-color: var(--bs-white);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;background: #651f1f;">레벨</td>
+                                    <td class="text-start flex-fill" style="font-size: 16px;line-height: 12px;text-align: center;border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;background: var(--bs-tertiary-color);color: var(--bs-white);margin-top: 0px;padding-top: 10px;">110</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;color: var(--bs-white);margin-top: 0px;padding-top: 10px;border-color: var(--bs-white);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;background: #651f1f;">총합 체력</td>
+                                    <td class="text-start" style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;color: var(--bs-white);margin-top: 0px;padding-top: 10px;">7,000,000 (700만)</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;color: var(--bs-white);margin-top: 0px;padding-top: 10px;border-color: var(--bs-white);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;background: #651f1f;">속성 반감 여부</td>
+                                    <td class="text-start" style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;color: var(--bs-white);margin-top: 0px;padding-top: 10px;">모든 속성 반감</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;color: var(--bs-white);margin-top: 0px;padding-top: 10px;border-color: var(--bs-white);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;background: #651f1f;">방어율</td>
+                                    <td class="text-start" style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;color: var(--bs-white);margin-top: 0px;padding-top: 10px;">40%</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;color: var(--bs-white);margin-top: 0px;padding-top: 10px;border-color: var(--bs-white);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;background: #651f1f;">요구 포스</td>
+                                    <td class="text-start" style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;color: var(--bs-white);margin-top: 0px;padding-top: 10px;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;color: var(--bs-white);margin-top: 0px;padding-top: 10px;border-color: var(--bs-white);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;background: #651f1f;">최대 포스</td>
+                                    <td class="text-start" style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;color: var(--bs-white);margin-top: 0px;padding-top: 10px;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;color: var(--bs-white);margin-top: 0px;padding-top: 10px;border-color: var(--bs-white);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;background: #651f1f;">데스카운트</td>
+                                    <td class="text-start" style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;color: var(--bs-white);margin-top: 0px;padding-top: 10px;">5</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;color: var(--bs-white);margin-top: 0px;padding-top: 10px;border-color: var(--bs-white);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;background: #651f1f;">초기화 날짜</td>
+                                    <td class="text-start" style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;color: var(--bs-white);margin-top: 0px;padding-top: 10px;">매일 00:00</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;color: var(--bs-white);margin-top: 0px;padding-top: 10px;border-color: var(--bs-white);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;background: #651f1f;">결정석 가격</td>
+                                    <td class="text-start" style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;color: var(--bs-white);margin-top: 0px;padding-top: 10px;">366,997 메소</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 14px;line-height: 12px;text-align: center;background: #651f1f;border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;font-weight: bold;color: var(--bs-white);" colspan="3">주요 보상</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;font-weight: bold;height: 30px;padding: 0px;min-height: 30px;max-height: 30px;color: var(--bs-white);padding-top: 3px;padding-bottom: 0px;" colspan="3"><img src="img/자쿰의%20투구.png" style="width: 30px;height: 30px;margin: 0px;margin-top: 0px;margin-right: 0px;min-width: 30px;max-width: 30px;min-height: 30px;max-height: 30px;">&nbsp;자쿰의 투구</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;font-weight: bold;height: 30px;padding: 0px;min-height: 30px;max-height: 30px;color: var(--bs-white);padding-top: 3px;padding-bottom: 0px;" colspan="3"><img src="img/자쿰의%20나뭇가지.png" style="width: 30px;height: 30px;margin: 0px;margin-top: 0px;margin-right: 0px;min-width: 30px;max-width: 30px;min-height: 30px;max-height: 30px;">&nbsp;자쿰의 나뭇가지</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;font-weight: bold;height: 30px;padding: 0px;min-height: 30px;max-height: 30px;color: var(--bs-white);padding-top: 3px;padding-bottom: 0px;" colspan="3"><img src="img/응축된%20힘의%20결정석.png" style="width: 30px;height: 30px;margin: 0px;margin-top: 0px;margin-right: 0px;min-width: 30px;max-width: 30px;min-height: 30px;max-height: 30px;">&nbsp;응축된 힘의 결정석</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;font-weight: bold;height: 30px;padding: 0px;min-height: 30px;max-height: 30px;color: var(--bs-white);padding-top: 3px;padding-bottom: 0px;" colspan="3"><img src="img/아쿠아틱%20레터%20눈장식.png" style="width: 30px;height: 30px;margin: 0px;margin-top: 0px;margin-right: 0px;min-width: 30px;max-width: 30px;min-height: 30px;max-height: 30px;">&nbsp;아쿠아틱 레터 눈장식</td>
+                                </tr>
+                                <tr></tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;font-weight: bold;height: 30px;padding: 0px;min-height: 30px;max-height: 30px;color: var(--bs-white);padding-top: 3px;padding-bottom: 0px;" colspan="3">&nbsp;<img src="img/자쿰의%20포이즈닉%20무기.png" style="width: 30px;height: 30px;margin: 0px;margin-top: 0px;margin-right: 0px;min-width: 30px;max-width: 30px;min-height: 30px;max-height: 30px;">&nbsp;자쿰의 포이즈닉 무기</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;font-weight: bold;height: 30px;padding: 0px;min-height: 30px;max-height: 30px;color: var(--bs-white);padding-top: 3px;padding-bottom: 0px;" colspan="3"><img src="img/주문의%20흔적.png" style="width: 30px;height: 30px;margin: 0px;margin-top: 0px;margin-right: 0px;min-width: 30px;max-width: 30px;min-height: 30px;max-height: 30px;">&nbsp;주문의 흔적</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;font-weight: bold;height: 30px;padding: 0px;min-height: 30px;max-height: 30px;color: var(--bs-white);padding-top: 3px;padding-bottom: 0px;" colspan="3"><img src="img/수상한%20큐브.png" style="width: 30px;height: 30px;margin: 0px;margin-top: 0px;margin-right: 0px;min-width: 30px;max-width: 30px;min-height: 30px;max-height: 30px;">&nbsp;수상한 큐브</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="item-1-3" class="tab-pane fade" role="tabpanel" aria-labelledby="item-1-3-tab">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th style="background: #651f1f;font-size: 14px;line-height: 12px;width: 200px;max-width: 200px;min-width: 200px;text-align: center;padding: 8px;padding-bottom: 8px;padding-top: 8px;height: 29px;max-height: 29px;color: var(--bs-white);min-height: 29px;border-width: 1px;border-color: var(--bs-white);border-right-width: 1px;border-right-color: rgb(255,255,255);border-bottom-width: 1px;border-bottom-color: #ffffff;" colspan="3" rowspan="6">카오스 자쿰</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="flex-fill" style="font-size: 16px;line-height: 12px;text-align: center;background: #651f1f;border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;font-weight: bold;width: 260px;min-width: 260px;max-width: 260px;padding: 0px;" rowspan="9"><img src="img/자쿰일러스트.png" style="width: 186px;height: 220px;margin: 0px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;border-width: 1px;border-color: var(--bs-white);min-width: 260px;max-width: 260px;" width="35" height="35"><audio data-bs-toggle="tooltip" data-bss-tooltip="" controls="" style="width: 260px;height: 30px;" title="WelcomeToTheHell"></audio></td>
+                                    <td class="flex-fill" style="font-size: 16px;line-height: 12px;text-align: center;color: var(--bs-white);margin-top: 0px;padding-top: 10px;width: 140px;min-width: 140px;max-width: 140px;border-color: var(--bs-white);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;background: #651f1f;">레벨</td>
+                                    <td class="text-start flex-fill" style="font-size: 16px;line-height: 12px;text-align: center;border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;background: var(--bs-tertiary-color);color: var(--bs-white);margin-top: 0px;padding-top: 10px;">180</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;color: var(--bs-white);margin-top: 0px;padding-top: 10px;border-color: var(--bs-white);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;background: #651f1f;">총합 체력</td>
+                                    <td class="text-start" style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;color: var(--bs-white);margin-top: 0px;padding-top: 10px;">84,000,000,000 (840억)</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;color: var(--bs-white);margin-top: 0px;padding-top: 10px;border-color: var(--bs-white);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;background: #651f1f;">속성 반감 여부</td>
+                                    <td class="text-start" style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;color: var(--bs-white);margin-top: 0px;padding-top: 10px;">모든 속성 반감</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;color: var(--bs-white);margin-top: 0px;padding-top: 10px;border-color: var(--bs-white);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;background: #651f1f;">방어율</td>
+                                    <td class="text-start" style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;color: var(--bs-white);margin-top: 0px;padding-top: 10px;">100%</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;color: var(--bs-white);margin-top: 0px;padding-top: 10px;border-color: var(--bs-white);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;background: #651f1f;">요구 포스</td>
+                                    <td class="text-start" style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;color: var(--bs-white);margin-top: 0px;padding-top: 10px;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;color: var(--bs-white);margin-top: 0px;padding-top: 10px;border-color: var(--bs-white);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;background: #651f1f;">최대 포스</td>
+                                    <td class="text-start" style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;color: var(--bs-white);margin-top: 0px;padding-top: 10px;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;color: var(--bs-white);margin-top: 0px;padding-top: 10px;border-color: var(--bs-white);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;background: #651f1f;">데스카운트</td>
+                                    <td class="text-start" style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;color: var(--bs-white);margin-top: 0px;padding-top: 10px;">5</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;color: var(--bs-white);margin-top: 0px;padding-top: 10px;border-color: var(--bs-white);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;background: #651f1f;">초기화 날짜</td>
+                                    <td class="text-start" style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;color: var(--bs-white);margin-top: 0px;padding-top: 10px;">매주 목요일 00:00</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;color: var(--bs-white);margin-top: 0px;padding-top: 10px;border-color: var(--bs-white);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;background: #651f1f;">결정석 가격</td>
+                                    <td class="text-start" style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;color: var(--bs-white);margin-top: 0px;padding-top: 10px;">9,741,285 메소</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 14px;line-height: 12px;text-align: center;background: #651f1f;border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;font-weight: bold;color: var(--bs-white);" colspan="3">주요 보상</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;font-weight: bold;height: 30px;padding: 0px;min-height: 30px;max-height: 30px;color: var(--bs-white);padding-top: 3px;padding-bottom: 0px;" colspan="3"><img src="img/자쿰의%20투구.png" style="width: 30px;height: 30px;margin: 0px;margin-top: 0px;margin-right: 0px;min-width: 30px;max-width: 30px;min-height: 30px;max-height: 30px;">&nbsp;카오스 자쿰의 투구</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;font-weight: bold;height: 30px;padding: 0px;min-height: 30px;max-height: 30px;color: var(--bs-white);padding-top: 3px;padding-bottom: 0px;" colspan="3"><img src="img/자쿰의%20나뭇가지.png" style="width: 30px;height: 30px;margin: 0px;margin-top: 0px;margin-right: 0px;min-width: 30px;max-width: 30px;min-height: 30px;max-height: 30px;">&nbsp;카오스 자쿰의 나뭇가지</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;font-weight: bold;height: 30px;padding: 0px;min-height: 30px;max-height: 30px;color: var(--bs-white);padding-top: 3px;padding-bottom: 0px;" colspan="3"><img src="img/응축된%20힘의%20결정석.png" style="width: 30px;height: 30px;margin: 0px;margin-top: 0px;margin-right: 0px;min-width: 30px;max-width: 30px;min-height: 30px;max-height: 30px;">&nbsp;응축된 힘의 결정석</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;font-weight: bold;height: 30px;padding: 0px;min-height: 30px;max-height: 30px;color: var(--bs-white);padding-top: 3px;padding-bottom: 0px;" colspan="3"><img src="img/아쿠아틱%20레터%20눈장식.png" style="width: 30px;height: 30px;margin: 0px;margin-top: 0px;margin-right: 0px;min-width: 30px;max-width: 30px;min-height: 30px;max-height: 30px;">&nbsp;아쿠아틱 레터 눈장식</td>
+                                </tr>
+                                <tr></tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;font-weight: bold;height: 30px;padding: 0px;min-height: 30px;max-height: 30px;color: var(--bs-white);padding-top: 3px;padding-bottom: 0px;" colspan="3">&nbsp;<img src="img/자쿰의%20포이즈닉%20무기.png" style="width: 30px;height: 30px;margin: 0px;margin-top: 0px;margin-right: 0px;min-width: 30px;max-width: 30px;min-height: 30px;max-height: 30px;">&nbsp;자쿰의 포이즈닉 무기</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;font-weight: bold;height: 30px;padding: 0px;min-height: 30px;max-height: 30px;color: var(--bs-white);padding-top: 3px;padding-bottom: 0px;" colspan="3"><img src="img/분노한%20자쿰의%20투구.png" style="width: 30px;height: 30px;margin: 0px;margin-top: 0px;margin-right: 0px;min-width: 30px;max-width: 30px;min-height: 30px;max-height: 30px;">&nbsp;분노한 자쿰의 투구</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;font-weight: bold;height: 30px;padding: 0px;min-height: 30px;max-height: 30px;color: var(--bs-white);padding-top: 3px;padding-bottom: 0px;" colspan="3"><img src="img/분노한%20자쿰의%20벨트.png" style="width: 30px;height: 30px;margin: 0px;margin-top: 0px;margin-right: 0px;min-width: 30px;max-width: 30px;min-height: 30px;max-height: 30px;">&nbsp;분노한 자쿰의 벨트</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;font-weight: bold;height: 30px;padding: 0px;min-height: 30px;max-height: 30px;color: var(--bs-white);padding-top: 3px;padding-bottom: 0px;" colspan="3"><img src="img/분노한%20자쿰의%20망토.png" style="width: 30px;height: 30px;margin: 0px;margin-top: 0px;margin-right: 0px;min-width: 30px;max-width: 30px;min-height: 30px;max-height: 30px;">&nbsp;분노한 자쿰의 망토</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;font-weight: bold;height: 30px;padding: 0px;min-height: 30px;max-height: 30px;color: var(--bs-white);padding-top: 3px;padding-bottom: 0px;" colspan="3"><img src="img/주문의%20흔적.png" style="width: 30px;height: 30px;margin: 0px;margin-top: 0px;margin-right: 0px;min-width: 30px;max-width: 30px;min-height: 30px;max-height: 30px;">&nbsp;주문의 흔적</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px;line-height: 12px;text-align: center;background: var(--bs-tertiary-color);border-right-width: 1px;border-right-color: #ffffff;border-bottom-width: 1px;border-bottom-color: #ffffff;font-weight: bold;height: 30px;padding: 0px;min-height: 30px;max-height: 30px;color: var(--bs-white);padding-top: 3px;padding-bottom: 0px;" colspan="3"><img src="img/수상한%20큐브.png" style="width: 30px;height: 30px;margin: 0px;margin-top: 0px;margin-right: 0px;min-width: 30px;max-width: 30px;min-height: 30px;max-height: 30px;">&nbsp;수상한 큐브</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{>layouts/footer}}

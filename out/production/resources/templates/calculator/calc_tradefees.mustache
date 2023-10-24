@@ -1,0 +1,45 @@
+{{>layouts/header}}
+<section class="bg-primary-subtle" style="height: auto;min-height: 1000px;border-bottom-width: 1px;border-bottom-color: #ffffff;background: var(--bs-danger-bg-subtle);">
+    <div class="table-responsive" style="margin: auto;width: 450px;max-width: 450px;margin-top: 5%;min-width: 450px;">
+        <form action="/fee-calc-res" method="post">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th style="text-align: center;background: #738aff;width: 60%;font-weight: bold;color: var(--bs-white);min-width: 60%;max-width: 60%;font-size: 20px;" colspan="2">경매장 및 교환 수수료 계산기</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td style="text-align: center;max-width: 140px;background: #738aff;font-weight: bold;color: var(--bs-white);width: 140px;min-width: 140px;">수수료 %</td>
+                    <td style="background: #75adff;">
+                        <select name="feesOption" class="border rounded-0 border-1 border-white" style="background: #75adff;color: var(--bs-white);font-weight: bold;width: 270px;max-width: 270px;min-width: 270px;">
+                            <option value="5" selected="">5% ( 집 or MVP 브론즈 )</option>
+                            <option value="3">3% ( PC방 or MVP 실버 이상 )</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;max-width: 200px;background: #738aff;font-weight: bold;color: var(--bs-white);">거래 금액</td>
+                    <td style="background: #75adff;">
+                        <input name="tradeValue" class="border rounded-0 border-1 border-white" type="number" style="max-height: 23px;background: #75adff;color: rgb(255,255,255);font-weight: bold;width: 270px;max-width: 270px;min-width: 270px;" min="0" placeholder="금액을 입력 하세요!">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;max-width: 200px;background: #738aff;font-weight: bold;color: var(--bs-white);">거래 시 수수료</td>
+                    <td style="background: #75adff;color: var(--bs-white);font-weight: bold;line-height: 22px;font-size: 18px;">
+                        {{fees}}
+                        <img src="img/meso.png" width="20" height="20" style="width: 20px;height: 20px;max-width: 20px;max-height: 20px;margin-bottom: 0px;margin-top: -4px;margin-left: 4px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;max-width: 200px;background: #738aff;font-weight: bold;color: var(--bs-white);" colspan="2">
+                        <button class="btn btn-success" type="submit">계산하기</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+
+    </div>
+</section>
+{{>layouts/footer}}

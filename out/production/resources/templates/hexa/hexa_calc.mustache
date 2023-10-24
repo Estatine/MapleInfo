@@ -1,0 +1,45 @@
+{{>layouts/header}}
+
+    <section class="bg-primary-subtle" style="height: auto;min-height: 1000px;border-bottom-width: 1px;border-bottom-color: #ffffff;background: #e5e1ff;">
+        <div class="table-responsive" style="margin: auto;width: 400px;max-width: 400px;margin-top: 5%;min-width: 400px;">
+            <!-- 계산값 선택 -->
+            <form action="/hexa-calc-res" method="post">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th style="text-align: center;background: #738aff;width: 60%;font-weight: bold;color: var(--bs-white);min-width: 60%;max-width: 60%;font-size: 20px;" colspan="2">
+                        <img src="img/hexa.png" width="30" height="30" style="width: 40px;height: 40px;margin-top: -5px;">&nbsp;HEXA 매트릭스 계산기
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td style="text-align: center;max-width: 200px;background: #738aff;font-weight: bold;color: var(--bs-white);"><strong>코어 종류</strong></td>
+                    <td style="background: #75adff;">
+                        <select name="skill_type" class="border rounded-0 border-1 border-white" style="background: #75adff;color: var(--bs-white);font-weight: bold;width: 150px;max-width: 150px;min-width: 150px;">
+                            <option value="0" selected="">코어 선택</option>
+                            <option value="6">오리진 (6차)</option>
+                            <option value="5">강화 (5차)</option>
+                            <option value="4">마스터리 (4차)</option>
+                        </select>
+                    </td>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td style="text-align: center;max-width: 200px;background: #738aff;font-weight: bold;color: var(--bs-white);">현재 레벨</td>
+                        <td style="background: #75adff;"><input name="crtLv" class="border rounded-0 border-1 border-white" type="number" style="height: 23px;max-height: 23px;background: #75adff;color: rgb(255,255,255);font-weight: bold;width: 150px;max-width: 150px;min-width: 150px;" min="0" max="30" step="1" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;max-width: 200px;background: #738aff;font-weight: bold;color: var(--bs-white);">목표 레벨</td>
+                        <td style="background: #75adff;"><input name="objLv" class="border rounded-0 border-1 border-white" type="number" style="height: 23px;max-height: 23px;background: #75adff;color: rgb(255,255,255);font-weight: bold;width: 150px;max-width: 150px;min-width: 150px;" min="0" max="30" step="1" value="1"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;max-width: 200px;background: #738aff;font-weight: bold;color: var(--bs-white);" colspan="2"><button class="btn btn-success" type="submit">계산하기</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            </form>
+        </div>
+    </section>
+
+{{>layouts/footer}}
