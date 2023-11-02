@@ -1,0 +1,60 @@
+{{>layouts/header}}
+    <section class="bg-primary-subtle" style="height: auto;min-height: 1000px;border-bottom-width: 1px;border-bottom-color: #ffffff;background: var(--bs-danger-bg-subtle);">
+        <div class="row justify-content-center" style="margin-top: 5%;">
+            <div class="col-xl-10 col-xxl-9">
+                <div class="card shadow">
+                    <div class="card-header d-flex flex-wrap justify-content-center align-items-center justify-content-sm-between gap-3">
+                        <form method="get" action="/board-write">
+                            <div class="input-group input-group-sm w-auto">
+                                <input class="form-control form-control-sm" type="text" placeholder="검색어를 입력하세요">
+                                <button class="btn btn-outline-primary btn-sm" type="submit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-search mb-1">
+                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                        <button class="btn btn-primary" type="button"><a href="/board-write" style="color:white;text-decoration-line:none;">글쓰기</a></button>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 100px;text-align: center;">번호</th>
+                                        <th style="width: 500px;text-align: center;">제목</th>
+                                        <th style="width: 150px;text-align: center;">글쓴이</th>
+                                        <th class="text-center" style="width: 150px;">등록일</th>
+                                        <th class="text-center" style="width: 100px;">조회수</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-truncate" style="max-width: 200px;text-align: center;">1</td>
+                                        <td class="text-truncate" style="max-width: 200px;text-align: center;">
+                                            <a href="#" style="color: var(--bs-table-color);">ddddd</a>
+                                        </td>
+                                        <td style="text-align: center;">Superior</td>
+                                        <td class="text-center" style="text-align: center;">23-11-01</td>
+                                        <td class="text-center" style="text-align: center;">13</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <nav>
+                            <ul class="pagination pagination-sm mb-0 justify-content-center">
+                                <li class="page-item"><a class="page-link" aria-label="Previous" href="#"><span aria-hidden="true">«</span></a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" aria-label="Next" href="#"><span aria-hidden="true">»</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{{>layouts/footer}}
